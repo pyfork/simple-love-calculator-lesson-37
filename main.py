@@ -21,11 +21,11 @@ combined_name = name_1_no_whitespace + name_2_no_whitespace
 # print(combined_name)
 
 # Count freq of TRUE characters
-cal_true = combined_name.count("t") + combined_name.count("r") +combined_name.count("u") +combined_name.count("e") 
+cal_true = combined_name.count("t") + combined_name.count("r") + combined_name.count("u") + combined_name.count("e") 
 # print(cal_true)
 
 # Count freq of LOVE characters
-cal_love = combined_name.count("l") + combined_name.count("o") +combined_name.count("v") +combined_name.count("e") 
+cal_love = combined_name.count("l") + combined_name.count("o") + combined_name.count("v") + combined_name.count("e") 
 # print(cal_love)
 
 # Convert the scores to strings
@@ -37,9 +37,9 @@ lovemarks = str(cal_true) + str(cal_love)
 lovescore = int(lovemarks)
 
 # Customise response based on score
-if lovescore <10 or lovescore>90:
+if (lovescore < 10) or (lovescore > 90):
     print(f"Your score is {lovescore}, you go together like Coke and Mentos.")
-elif lovescore >40 and lovescore<50:
+elif (lovescore > 40) and (lovescore < 50):
     print(f"Your score is {lovescore}, you are alright together.")
 else:
     print(f"Your score is {lovescore}.")

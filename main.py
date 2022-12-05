@@ -2,22 +2,22 @@
 print("Welcome to the Love Calculator!")
 
 # Get user's and their partner's name
-name1 = input("What is your name? \n")
-name2 = input("What is their name? \n")
+name_1 = input("What is your name? \n")
+name_2 = input("What is their name? \n")
 
 # Turn names to lowercase to count characters using count()
 # Remove whitespaces
 # Combine names
-lowername1 = name1.lower()
-lowername2 = name2.lower()
+name_1_in_lowercase = name_1.lower()
+name_2_in_lowercase = name_2.lower()
 
-nogaps_name1 = lowername1.replace(" ", "")
-nogaps_name2 = lowername2.replace(" ", "")
+name_1_no_whitespace = name_1_in_lowercase.replace(" ", "")
+name_2_no_whitespace = name_2_in_lowercase.replace(" ", "")
 
-combined_name = nogaps_name2 + nogaps_name1
+combined_name = name_1_no_whitespace + name_2_no_whitespace
 
-# print(nogaps_name1)
-# print(nogaps_name2)
+# print(name_1_no_whitespace)
+# print(name_2_no_whitespace)
 # print(combined_name)
 
 # Count freq of TRUE characters
